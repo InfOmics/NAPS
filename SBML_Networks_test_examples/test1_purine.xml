@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="purine_metabolism_spn">
+    <listOfUnitDefinitions>
+      <unitDefinition id="substance">
+        <listOfUnits>
+          <unit kind="item"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment" spatialDimensions="0"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="PRPP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="IMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Adenylsuccinate" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="AMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="XMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Inosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="GMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Hypoxanthine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Adenosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Deoxyinosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Xanthine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Urate" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Adenine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Deoxyadenosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="dAMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Guanosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Guanine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="Deoxyguanosine" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="dGMP" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="_T_0_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="PRPP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> PRPP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_1_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Adenylsuccinate" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> IMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_2_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Adenylsuccinate" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Adenylsuccinate </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_3_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="XMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> IMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_4_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="IMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Inosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> IMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_5_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="XMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="GMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> XMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_6_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Adenosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Inosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Adenosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_7_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Adenosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Adenine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Adenosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_8_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Deoxyadenosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Deoxyinosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Deoxyadenosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_9_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Deoxyinosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Hypoxanthine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Deoxyinosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_10_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Hypoxanthine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xanthine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Hypoxanthine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_11_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Xanthine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Urate" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Xanthine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_12_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Deoxyguanosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dGMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Deoxyguanosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_13_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Guanine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Deoxyguanosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Guanine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_14_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Guanosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Guanine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Guanosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_15_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Guanine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xanthine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Guanine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_16_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="GMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Guanosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> GMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_17_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Inosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Hypoxanthine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Inosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_18_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Deoxyadenosine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dAMP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Deoxyadenosine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_19_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Adenine" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Deoxyadenosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> Adenine </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_20_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="AMP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Adenosine" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> AMP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

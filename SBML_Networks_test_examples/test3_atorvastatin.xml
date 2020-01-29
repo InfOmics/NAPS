@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model metaid="_244609" id="Atorvastatin_Metabolism" name="Bucher2011_Atorvastatin_Metabolism">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>This is the model of atorvastatin metabolism in hepaitc cells described in the article:<br/>
+        <strong>A systems biology approach to dynamic modeling and inter-subject variability of statin pharmacokinetics in human hepatocytes</strong>
+        <br/>
+Joachim Bucher , Stephan Riedmaier , Anke Schnabel , Katrin Marcus , Gabriele Vacun , Thomas S Weiss , Wolfgang E Thasler , Andreas K Nussler , Ulrich M Zanger  and Matthias Reuss. BMC Systems Biology 2011, 5:66. DOI:<a href="http://dx.doi.org/10.1186/1752-0509-5-66">10.1186/1752-0509-5-66</a>
+    </p>
+    <p>
+Abstract:<br/>
+Background:<br/>
+
+The individual character of pharmacokinetics is of great importance in the risk assessment of new drug leads in pharmacological research. Amongst others, it is severely influenced by the properties and inter-individual variability of the enzymes and transporters of the drug detoxification system of the liver. Predicting individual drug biotransformation capacity requires quantitative and detailed models.<br/>
+Results:<br/>
+In this contribution we present the de novo deterministic modeling of atorvastatin biotransformation based on comprehensive published knowledge on involved metabolic and transport pathways as well as physicochemical properties. The model was evaluated in primary human hepatocytes and parameter identifiability analysis was performed under multiple experimental constraints. Dynamic simulations of atorvastatin biotransformation considering the inter-individual variability of the two major involved enzymes CYP3A4 and UGT1A3 based on quantitative protein expression data in a large human liver bank (n=150) highlighted the variability in the individual biotransformation profiles and therefore also points to the individuality of pharmacokinetics.<br/>
+Conclusions:<br/>
+A dynamic model for the biotransformation of atorvastatin has been developed using quantitative metabolite measurements in primary human hepatocytes. The model comprises kinetics for transport processes and metabolic enzymes as well as population liver expression data allowing us to assess the impact of inter-individual variability of concentrations of key proteins. Application of computational tools for parameter sensitivity analysis enabled us to considerably improve the validity of the model and to create a consistent framework for precise computer-aided simulations in toxicology.
+</p>
+  <p>
+The model is parameterized for patient 1 and reproduces the time courses in figure 2 of the article.
+</p>
+</body>
+</notes><listOfUnitDefinitions>
+  <unitDefinition id="substance">
+    <listOfUnits>
+      <unit kind="item"/>
+    </listOfUnits>
+  </unitDefinition>
+</listOfUnitDefinitions><listOfCompartments>
+  <compartment metaid="_244961" id="cell" size="1" constant="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244961">
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/go/GO:0005623"/>
+            </rdf:Bag>
+          </bqbiol:is>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </compartment>
+  <compartment metaid="_244959" id="compartment" size="1" constant="true"/>
+ 
+</listOfCompartments><listOfSpecies>
+  <species metaid="_244963" id="AS_m" compartment="cell" initialAmount="87" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244963">
+          <bqbiol:isVersionOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/60823"/>
+            </rdf:Bag>
+          </bqbiol:isVersionOf>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244964" id="ASL_m" compartment="cell" initialAmount="31" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244964">
+          <bqbiol:isVersionOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:isVersionOf>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244965" id="ASoOH_m" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244965">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244968" id="ASLpOH_m" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244968">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244971" id="ASpOH_m" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244971">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244974" id="ASLoOH_m" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244974">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244977" id="AS_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244977">
+          <bqbiol:isVersionOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:isVersionOf>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244980" id="ASL_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244980">
+          <bqbiol:isVersionOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:isVersionOf>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244983" id="ASpOH_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244983">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244986" id="ASoOH_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244986">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244989" id="ASLpOH_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244989">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244992" id="ASLoOH_c" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244992">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244995" id="ASpOH_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244995">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_244998" id="ASoOH_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_244998">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_245001" id="ASLpOH_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_245001">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_245004" id="ASLoOH_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_245004">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_245007" id="AS_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_245007">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/chebi/CHEBI:39548"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+  <species metaid="_245010" id="ASL_b" compartment="cell" initialAmount="10" hasOnlySubstanceUnits="true">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#_245010">
+          <bqbiol:hasVersion>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/pubchem.compound/6483036"/>
+            </rdf:Bag>
+          </bqbiol:hasVersion>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+  </species>
+</listOfSpecies>
+<listOfReactions>
+  <reaction metaid="_245012" id="Import_AS" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+          <times/>
+          <cn type="integer"> 1 </cn>
+          <ci> AS_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245013" id="Import_ASL" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+          <times/>
+          <cn type="integer"> 1 </cn>
+          <ci> ASL_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245014" id="CYP3A4_ASpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> AS_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245017" id="CYP3A4_ASoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> AS_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245020" id="CYP3A4_ASLpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLpOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245023" id="CYP3A4_ASLoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLoOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245026" id="Export_ASoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASoOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASoOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245029" id="UGT1A3_AS" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> AS_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245032" id="R_ASASL_c" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245035" id="CR_oOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLoOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLoOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245038" id="CR_pOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLpOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLpOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245041" id="Export_AS" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AS_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> AS_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245044" id="Export_ASL" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASL_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245047" id="Import_ASLpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLpOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLpOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLpOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245050" id="Import_ASLoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLoOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLoOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLoOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245053" id="ASpOH_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASpOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASpOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245056" id="ASoOH_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASoOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASoOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245059" id="ASLpOH_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLpOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLpOH_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLpOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245062" id="ASLoOH_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLoOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLoOH_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLoOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245065" id="AS_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="AS_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AS_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> AS_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245068" id="ASL_Prot" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASL_b" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245071" id="Import_ASpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASpOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASpOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245074" id="R_ASASL_m" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASL_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="AS_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASL_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245077" id="R_pOH_m" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLpOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLpOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245080" id="R_oOH_m" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLoOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLoOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245083" id="Export_ASLpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLpOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLpOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLpOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245086" id="Export_ASLoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASLoOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASLoOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASLoOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245089" id="Export_ASpOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASpOH_c" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASpOH_m" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASpOH_c </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+  <reaction metaid="_245092" id="Import_ASoOH" reversible="false">
+    <listOfReactants>
+      <speciesReference species="ASoOH_m" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="ASoOH_c" stoichiometry="1"/>
+    </listOfProducts>
+    <kineticLaw>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <apply>
+            <times/>
+            <cn type="integer"> 1 </cn>
+            <ci> ASoOH_m </ci>
+        </apply>
+      </math>
+    </kineticLaw>
+  </reaction>
+</listOfReactions>
+</model>
+</sbml>

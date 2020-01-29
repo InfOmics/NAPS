@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="syntetic_network_50_base">
+    <listOfUnitDefinitions>
+      <unitDefinition id="substance">
+        <listOfUnits>
+          <unit kind="item"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment" spatialDimensions="0"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="_P_0_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_1_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_2_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_3_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_4_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_5_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_6_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_7_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_8_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_9_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_10_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_11_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_12_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_13_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_14_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_15_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_16_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_17_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_18_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_19_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_20_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_21_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_22_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_23_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_24_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_25_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_26_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_27_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_28_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_29_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_30_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_31_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_32_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_33_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_34_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_35_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_36_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_37_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_38_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_39_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_40_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_41_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_42_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_43_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_44_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_45_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_46_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_47_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_48_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_49_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="_P_50_" compartment="compartment" initialAmount="10" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="_T_0_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_0_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_1_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_0_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_1_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_40_" stoichiometry="1"/>
+          <speciesReference species="_P_4_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_5_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_40_ </ci>
+              <ci> _P_4_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_2_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_0_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_40_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_0_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_3_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_39_" stoichiometry="1"/>
+          <speciesReference species="_P_5_" stoichiometry="1"/>
+          <speciesReference species="_P_11_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_2_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_39_ </ci>
+              <ci> _P_5_ </ci>
+              <ci> _P_11_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_4_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_2_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_12_" stoichiometry="1"/>
+          <speciesReference species="_P_3_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_2_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_5_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_11_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_6_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_11_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_6_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_42_" stoichiometry="1"/>
+          <speciesReference species="_P_3_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_13_" stoichiometry="1"/>
+          <speciesReference species="_P_7_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_42_ </ci>
+              <ci> _P_3_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_7_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_12_" stoichiometry="1"/>
+          <speciesReference species="_P_6_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_14_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_12_ </ci>
+              <ci> _P_6_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_8_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_13_" stoichiometry="1"/>
+          <speciesReference species="_P_43_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_24_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_13_ </ci>
+              <ci> _P_43_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_9_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_24_" stoichiometry="1"/>
+          <speciesReference species="_P_44_" stoichiometry="1"/>
+          <speciesReference species="_P_7_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_16_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_24_ </ci>
+              <ci> _P_44_ </ci>
+              <ci> _P_7_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_10_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_23_" stoichiometry="1"/>
+          <speciesReference species="_P_14_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_22_" stoichiometry="1"/>
+          <speciesReference species="_P_45_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_23_ </ci>
+              <ci> _P_14_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_11_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_41_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_11_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_41_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_12_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_38_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_18_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_38_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_13_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_4_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_9_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_4_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_14_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_9_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_18_" stoichiometry="1"/>
+          <speciesReference species="_P_37_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_9_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_15_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_9_" stoichiometry="1"/>
+          <speciesReference species="_P_35_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_17_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_9_ </ci>
+              <ci> _P_35_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_16_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_35_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_33_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_35_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_17_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_17_" stoichiometry="1"/>
+          <speciesReference species="_P_33_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_32_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_17_ </ci>
+              <ci> _P_33_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_18_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_34_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_30_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_34_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_19_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_31_" stoichiometry="1"/>
+          <speciesReference species="_P_30_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_21_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_31_ </ci>
+              <ci> _P_30_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_20_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_21_" stoichiometry="1"/>
+          <speciesReference species="_P_15_" stoichiometry="1"/>
+          <speciesReference species="_P_48_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_45_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_21_ </ci>
+              <ci> _P_15_ </ci>
+              <ci> _P_48_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_21_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_29_" stoichiometry="1"/>
+          <speciesReference species="_P_21_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_46_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_29_ </ci>
+              <ci> _P_21_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_22_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_47_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_27_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_47_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_23_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_45_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_28_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_45_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_24_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_22_" stoichiometry="1"/>
+          <speciesReference species="_P_16_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_25_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_22_ </ci>
+              <ci> _P_16_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_25_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_28_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_25_" stoichiometry="1"/>
+          <speciesReference species="_P_26_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_28_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_26_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_27_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_26_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_27_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_27_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_8_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_9_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_8_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_28_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_36_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_33_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_36_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_29_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_20_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_15_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_20_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_30_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_23_" stoichiometry="1"/>
+          <speciesReference species="_P_6_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_15_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_23_ </ci>
+              <ci> _P_6_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_31_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_16_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_14_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_16_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_32_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_33_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_34_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_33_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_33_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_36_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_35_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_36_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_34_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_8_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_4_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_8_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_35_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_1_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_39_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_1_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_36_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_46_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_27_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_46_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_37_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_12_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_42_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_12_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_38_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_18_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_49_" stoichiometry="1"/>
+          <speciesReference species="_P_10_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_18_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_39_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_10_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_20_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_10_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_40_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_19_" stoichiometry="1"/>
+          <speciesReference species="_P_49_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_10_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_19_ </ci>
+              <ci> _P_49_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_41_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_19_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_48_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_19_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_42_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_32_" stoichiometry="1"/>
+          <speciesReference species="_P_37_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_19_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_32_ </ci>
+              <ci> _P_37_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_43_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_32_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_31_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_32_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_44_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_5_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_11_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_5_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_T_45_" reversible="false">
+        <listOfReactants>
+          <speciesReference species="_P_50_" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_P_40_" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <cn type="integer"> 1 </cn>
+              <ci> _P_50_ </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
